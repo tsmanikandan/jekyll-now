@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Facing my fear of an audience
 published: true
 ---
 ---
@@ -8,4 +8,4 @@ layout: post
 title: The Beginning
 ---
 
-##Facing my fears
+##Why I am writing a blog
