@@ -7,7 +7,7 @@ published: true
   {% for post in site.posts %}
     <article class="post">
 	  
-
+      <div class="date">
         {% assign day = post.date | date: "%-d"  %}
 		{% case day %}
   			{% when '1' or '21' or '31' %}{{ day }}st
@@ -16,8 +16,12 @@ published: true
   			{% else %}{{ day }}th
 		{% endcase %}
 		{{ post.date | date: " %B, %Y" }}
+  	  </div>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="entry">
         {{ post.excerpt }}
+      </div>
+
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
